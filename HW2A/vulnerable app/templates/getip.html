@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <p align="center">I will get you the ip address of a domain name!</p><br>
+    <div style="text-align: center">
+        <form method="POST" action="/getipresult">
+          Domain Name: <input type="text" name="domain"><br>
+          <input type="submit">
+        </form>
+    </div>
+{% endblock content %}
